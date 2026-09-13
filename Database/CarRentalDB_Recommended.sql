@@ -1,3 +1,5 @@
+CREATE DATABASE CarRentalDB;
+GO
 -- Vehicle subtype fields used by the C# Sedan/SUV/Van models.
 IF COL_LENGTH('dbo.Vehicles', 'TransmissionType') IS NULL
     ALTER TABLE dbo.Vehicles ADD TransmissionType NVARCHAR(50) NULL;
